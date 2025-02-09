@@ -1,42 +1,106 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffc0cb; /* Light pink background */
+  min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centering for the home page */
+.App {
   text-align: center;
+  background-color: #ffc0cb; /* Light pink background */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between image and buttons */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Larger image for the first page */
+.centered-image {
+  width: 300px; /* Increased width */
+  height: 300px; /* Increased height */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.button-container {
+  display: flex;
+  gap: 10px; /* Space between buttons */
 }
 
-.card {
-  padding: 2em;
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: background-color 0.3s ease;
 }
 
-.read-the-docs {
-  color: #888;
+/* Style for Button 1 */
+.button.button-red {
+  background-color: #ff4d4d; /* Red color */
+}
+
+.button.button-red:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Style for Button 2 */
+.button.button-green {
+  background-color: #28a745; /* Green color */
+}
+
+.button.button-green:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Centering for the first button page */
+.first-button-page {
+  text-align: center;
+  background-color: #ffc0cb; /* Light pink background */
+}
+
+.first-button-page .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between image row and message */
+}
+
+/* Image row for side-by-side images */
+.first-button-page .image-row {
+  display: flex;
+  gap: 20px; /* Space between images */
+}
+
+/* Centering for the second page */
+.second-page {
+  text-align: center;
+  background-color: #ffc0cb; /* Light pink background */
+}
+
+.second-page .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between image row and message */
+}
+
+/* Smaller images for the second page */
+.second-page .centered-image {
+  width: 150px; /* Keep the original size */
+  height: 150px; /* Keep the original size */
+}
+
+.second-page .message {
+  font-size: 18px;
+  color: #333;
+  max-width: 300px; /* Limit message width for better readability */
 }
